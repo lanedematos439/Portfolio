@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfólio | Roselane Oliveira </title>   
+</head>
+<body>
+    <nav class="navbar">
+            <div class="trilho" id="trilho">
+                <div class="indicador"></div>
+            </div>
+            <div class="logo-saturn">
+                <img src="src/saturno1.png" alt="saturn">
+            </div>
+        <div class="nav-content">
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul> 
+        </div>
+
+    </nav>
+   <div class="linha-container">
+            <hr class="hr-nav">
+    </div>
+        <div class="intro">
+            <div class="title">
+                <h1 class="ola">Olá, eu sou a </h1>
+                <span id="typing" class="nome">Roselane Oliveira :)</span>
+                <p class="p">Estudante de Análise e Desenvolvimento de Sistemas | 3º ano</p>
+            </div>
+            <div class="actions-botoes">
+                <a href="assets/cv/Currículo.pdf.pdf" download><button class="botao-curriculo">Download CV</button></a>
+                <button class="botao-contato">Entrar em contato</button>
+            </div>
+        </div>
+
+            <div class="imagem-perfil">
+                <a href="">
+                    <img src="src/img-perfil.jpeg">
+                </a>
+            </div>
+            <div class="divisor">
+                <hr>
+            </div>
+            <section id="sobre-mim">
+                <div class="sobre-mim">
+                    <h2 class="titulo-sobre">SOBRE <span>MIM.</span></h2>
+                    <p class="p-sobreMim">Estudante do 3º ano do curso técnico em Desenvolvimento de Sistemas na EEEP Professor Onélio Porto. </p>
+                    <p class="p-sobreMim">Meu interesse por tecnologia começou ainda na infância e, durante o curso, tive a oportunidade de reacender essa paixão através da programação. </p>
+                    <p class="p-sobreMim">Desde então, venho explorando diferentes áreas do desenvolvimento e do universo da TI, tenho grande interesse no PHP e em desenvolvimento web full-stack, </p>
+                    <p class="p-sobreMim">com foco em back-end para aplicações web. Sou organizada e acredito no aprendizado constante, buscando sempre estudar e evoluir meus conhecimentos.</p>
+
+                </div>
+                <div class="h2-">
+                    <h2 class="h2-habilidades">MINHAS <span>HABILIDADES.</span></h2>
+                </div>
+                
+                <main class="sessao-habilidades">
+                    <div class="Html5"><p>HTML5</p><img src="src/1/HTML.png"></div>
+                    <div class="Css3"><p>Css3</p><img src="src/1/CSS3.png"></div>
+                    <div class="Python"><p>Python</p><img src="src/1/Python-logo.png"></div>
+                    <div class="Javascript"><p>Javascript</p><img src="src/1/js.png"></div>
+                    <div class="PHP"><p>PHP</p><img src="src/1/PHP-logo.png"></div>
+                </main>
+                </section>
+                <section id="projetos">
+                    <div class="h2-projetos">
+                        <h2 class="h2-projetos">MEUS <span>PROJETOS.</span></h2>
+                    </div>
+                    <div class="sessao-projetos">
+                        <div class="proj-flutterflow"><img class="proj-flutterflow" src="src/projetos/proj1.jpg"><hr class="linha-projetos1"></div>
+                        <div class="proj-escola"><img class="proj-escola" src="src/projetos/proj2.jpg"><hr class="linha-projetos2"></div>
+                    </div>
+                </section>
+                <section id="contato">
+                    <div class="contato">
+                    <div class="h2-contato">
+                        <h2 class="h2-contato">CONTATO<span>.</span</h2>
+                    </div>
+                    <div class="sessao-contato">
+                        <div class="Email"><a href=""><img class="email-logo" src="src/1/email.png"></a><p class="email-p">E-mail</p><p class="gmail">roselaneoliveira168@gmail.com</p></div>
+                        <div class="Telefone"><a href=""><img class="telefone-logo" src="src/1/telefone.png"></a><p class="telefone-p">Telefone</p><p class="numero">(85) 9-82264919</p></div>
+                        <div class="LinkedIn"><a href="https://www.linkedin.com/in/roselane-matos-224209261/"><img class="linkedin-logo" src="src/1/linkedin.png"></a><p class="linkedin-p">LinkedIn</p><p class="meu-linkedin">@roselane-matos</p></div>
+                        <div class="GitHub"><a href="https://github.com/lanedematos439"><img class="github-logo" src="src/1/github.png"></a><p class="github-p">GitHub</p><p class="meu-github">@lanedematos439</p></div>
+                    </div>
+                    </div>
+                </section>
+        
+
+       <script>
+    const h1 = document.querySelector(".title h1");
+    const span = document.getElementById("typing");
+    const p = document.querySelector(".title p");
+
+    const introText = h1.textContent;
+    const nameText = span.textContent;
+    const subText = p.textContent;
+
+    h1.textContent = "";
+    span.textContent = "";
+    p.textContent = "";
+
+    let i = 0;
+    let j = 0;
+    let k = 0;
+
+    function typeIntro() {
+        if (i < introText.length) {
+            h1.textContent += introText.charAt(i);
+            i++;
+            setTimeout(typeIntro, 85);
+        } else {
+            typeName();
+        }
+    }
+
+    function typeName() {
+        if (j < nameText.length) {
+            span.textContent += nameText.charAt(j);
+            j++;
+            setTimeout(typeName, 85);
+        } else {
+            typeSubText();
+        }
+    }
+
+    function typeSubText() {
+        if (k < subText.length) {
+            p.textContent += subText.charAt(k);
+            k++;
+            setTimeout(typeSubText, 65);
+        }
+    }
+
+    typeIntro();
+
+
+</script>
+<script src="main.js"></script>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="https://github.com/lanedematos439">GitHub</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </footer>
+
+</body>
+<script>
+
+</script>
+</html>
