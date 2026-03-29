@@ -3,8 +3,7 @@
     --cor-navbar: rgb(5, 5, 10);
     --cor-footer: rgb(13, 13, 15);
     /* --cor-navbar: rgb(229, 229, 238); */
-    --cor-principal1:#c6c99d;
-    --cor-principalescura: #6f7058;
+    --cor-principal1:#a3f71b;
 }
 html{
     scroll-behavior: smooth;
@@ -19,6 +18,7 @@ body {
     box-sizing: border-box;
     margin: 0;
 }
+
 .navbar{
     background-color: var(--cor-navbar);
     padding: 8px;
@@ -27,6 +27,7 @@ body {
     position: relative;
     flex-wrap: wrap;
     justify-content: flex-end;
+    
 
 }
 
@@ -42,7 +43,7 @@ body {
     display: flex;
     color: #b8f556;
     list-style: none;
-    gap: 19px;
+    gap: 15px;
     margin-right: 200px;
     font-family: "DM Sans", sans-serif;
     margin-top: 25px;
@@ -56,7 +57,7 @@ body {
 .hr-nav {
     border: none;
     height: 3px;
-    background-color: #aceb47; /* sua cor */
+    background-color: #aceb47; 
     margin: 40px 0;
     margin-top: 2px;
     width: 110%;
@@ -91,6 +92,13 @@ body {
     background-color: #676854;
 
 }
+body.light .botao-contato{
+    color: #015a01;
+    border: 1px solid #015a01; 
+}
+body.light .botao-contato:hover{
+     background-color: #b6fa8e;
+}
 .botao-curriculo{
     border: none;
     background-color: #6f7058;
@@ -101,9 +109,9 @@ body {
     transform: scale(1.03);
 }
 .botao-contato:hover{
-    
     transform: scale(1.03);
 }
+
 .title{
     font-family: "DM Sans", sans-serif;
     height: 120px; 
@@ -113,10 +121,14 @@ body {
   height: 40px;
   overflow: hidden;
 }
+
 .nome{
     color: #a8ff1c;
     font-size: 40px;
     margin-top: -11px;
+}
+body.light .nome{
+    color: #6bac02;
 }
 .p{
     font-size: 17px;
@@ -131,6 +143,9 @@ body {
     margin-top: 210px;
     margin-left: 150px;
     margin-bottom: 10px;
+}
+body.light .ola{
+    color: #a3a3a2;
 }
 span{
     display: block;
@@ -183,10 +198,10 @@ span{
     background-color: #fff;;
 }
 .trilho.light{
-    background-color: #919090;
+    background-color: #c7c5c5;
 }
 body.light{
-    background-color: #ffffff;
+    background-color: #fffafa;
 }
 body.light .p{
     color: #4e4e4a;
@@ -194,9 +209,7 @@ body.light .p{
 body.light .p{
     color: #4e4e4a;
 }
-body.light .p{
-    color: #4e4e4a;
-}
+
 .nav-content ul li{
     position: relative;
     cursor: pointer;
@@ -237,17 +250,27 @@ body.light .p{
     font-size: 18px;
     
 }
+body.light .p-sobreMim{
+    color: #4e4e4a;
+}
+
 .titulo-sobre{
     color: #dbdbda;
     font-size: 25px;
+}
+body.light .titulo-sobre{
+    color: #a3a3a2;
 }
 .titulo-sobre span{
     color: #a8ff1c;
     margin-top: -34px;
     margin-left: 85px;
     font-size: 26px;
-
 }
+body.light .titulo-sobre span{
+    color: #6bac02;
+}
+
 .h2-habilidades{
     color: #dbdbda;
     font-size: 23px;
@@ -255,13 +278,18 @@ body.light .p{
     margin-top: 75px;
     margin-left: 136px;
 }
+body.light .h2-habilidades{
+    color: #a3a3a2;
+}
 .h2-habilidades span{
     color: #a8ff1c;
     margin-top: -30px;
     margin-left: 95px;
     font-size: 23px;
     font-family: "DM Sans", sans-serif;
-
+}
+body.light .h2-habilidades span{
+    color: #6bac02;
 }
 .intro{
     position: relative;
@@ -278,6 +306,10 @@ body.light .p{
     border-radius: 15px;
     cursor: pointer;
 }
+body.light .Html5, .Css3, .Python, .Javascript, .PHP{
+    border: 1px solid #6bac02;
+}
+
 .sessao-habilidades{
     display: flex;
     justify-content: center;
@@ -310,20 +342,27 @@ body.light .p{
     margin-left: -61px;
 }
 .PHP img{
-    width: 70px;
-    height: 70px;
-    margin-left: -61px;
+    width: 90px;
+    height: 50px;
+    margin-left: -60px;
 }
+
 .sessao-habilidades p{
     margin-left: 50px;
      margin-top: 25px;
     color: #a8ff1c;
+}
+body.light .sessao-habilidades p{
+    color: #6bac02;
 }
 .Css3 p{
     margin-left: 60px;
 }
 .Javascript p{
     margin-left: 39px;
+}
+.PHP p{
+    margin-left: 60px;
 }
 .h2-projetos{
     color: #dbdbda;
@@ -332,11 +371,17 @@ body.light .p{
     margin-top: 75px;
     margin-left: 67px;
 }
+body.light .h2-projetos{
+    color: #a3a3a2;
+}
 .h2-projetos span{
     color: #a8ff1c;
     margin-top: -32px;
     margin-left: 70px;
     font-size: 25px;
+}
+body.light .h2-projetos span{
+    color: #6bac02;
 }
 .h2-contato{
     color: #dbdbda;
@@ -345,12 +390,19 @@ body.light .p{
     margin-top: 75px;
     margin-left: 67px;
 }
+body.light .h2-contato{
+    color: #a3a3a2;
+    }
 .h2-contato span{
     color: #a8ff1c;
     margin-top: -32px;
     margin-left: 110px;
     font-size: 25px;
 }
+body.light .h2-contato span{
+    color: #6bac02;
+}
+
 .proj-flutterflow img, .proj-cinema img{
     width: 350px;
     height: 230px;
@@ -362,32 +414,31 @@ body.light .p{
 .sessao-projetos {
     display: flex;
     margin-left: 100px;
-    
 }
 .proj-cinema img{
     margin-top: 46px;
-    transition: transform 0.3s ease;
     margin-left: 25px;
-    
-   
 }
-.proj-cinema img:hover{
+.proj-cinema{
+    transition: transform 0.3s ease;
+}
+.proj-cinema:hover{
     transform: scale(1.05);
 }
 .proj-flutterflow{
      margin-top: 23px;
 }
-.proj-flutterflow img{
+.proj-flutterflow{
     transition: transform 0.3s ease;
 }
-.proj-flutterflow img:hover{
+.proj-flutterflow:hover{
     transform: scale(1.05);
 }
 .sessao-projetos hr{
    background-image: linear-gradient(90deg, #66ff00, rgb(110, 179, 0) );
    width: 350px;
    height: 3px;
-   margin-top: -2px;
+   margin-top: -4px;
    border: none;
    position: relative;
    margin-left: 25px;
@@ -399,7 +450,64 @@ body.light .p{
 .linha-projetos2 hr{
     z-index: 1; 
     position: relative;
-    
+}
+.aba{
+    width: 350px;
+    height: 50px;
+    margin-top: -8px;
+    background-color: #030307;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    margin-left: 25px;
+    transition: transform 0.3s ease;
+}
+.aba2{
+    width: 350px;
+    height: 50px;
+    margin-top: -8px;
+    background-color: #030307;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    margin-left: 25px;
+    transition: transform 0.3s ease;
+}
+.botao1{
+    border-radius: 18px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    color: #f1f1f0;
+    background-color: #6f7058;
+    background-image: linear-gradient(90deg, #6bca2b, rgb(83, 116, 30) );
+    border: none;
+    margin-top: 12px;
+    margin-left: 250px;
+}
+.botao1:hover{
+    transform: scale(1.05);
+
+}
+.botao2{
+    border-radius: 18px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    color: #f1f1f0;
+    background-color: #6f7058;
+    background-image: linear-gradient(90deg, #6bca2b, rgb(83, 116, 30) );
+    border: none;
+    margin-top: 12px;
+    margin-left: 250px;
+}
+.botao2:hover{
+    transform: scale(1.05);
+
+}
+.sessao-projetos p{
+    color: #4db905;
+    margin-top: -35px;
+    margin-left: 38px;
+    font-family: "DM Sans", sans-serif;
 }
 
 footer {
@@ -449,15 +557,23 @@ footer a:hover {
 .sessao-contato p{
     margin-top: 20px;
     font-family: "DM Sans", sans-serif;
-
 }
 .gmail, .numero, .meu-linkedin, .meu-github{
     color: #8d8f83;
 }
+body.light .gmail p, .numero p, .meu-linkedin p, .meu-github p{
+    color: #4e4e4a;
+}
+
 .email-p, .telefone-p, .linkedin-p, .github-p{
-    color: #dbdbda;
+    color: #c0c0bf;
     margin-left: 25px;
 }
+body.light .email-p p, .telefone-p p, .linkedin-p p, .github-p p{
+    color: #6e6e6e;
+}
+
+
 .gmail{
     margin-left: 20px;
 }
@@ -484,4 +600,202 @@ footer a:hover {
 }
 .LinkedIn:hover{
     transform: scale(1.10);
+}
+/* PROJETO CINEMANACIONAL */
+.janela-modal-ProjCinema{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000008a;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+.modalcinema{
+    width: 65%;
+    height: 450px;
+    min-height: 200px;
+    background-color: var(--cor-fundo);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+.fechar{
+    position: absolute;
+    top: -5px;
+    height: -5px;
+    width: 30px;
+    right: -5px;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--cor-principal1);
+    font-size: 20px;
+    color: var(--cor-fundo);
+    cursor: pointer;
+}
+.janela-modal-ProjCinema.abrir{
+    display: flex;
+}
+@keyframes abrirModal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    
+}
+.abrir .modalcinema{
+    animation: abrirModal 0.5s;
+}
+.modalcinema p, h1, h3{
+    margin-left: 600px;
+    margin-top: -5px;
+    font-family: "DM Sans", sans-serif;
+}
+.modalcinema h1, h3{
+    color: var(--cor-principal1);
+}
+.modalcinema p{
+    color: #8e8f8c;
+}
+.AcessarProj{
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    color: #f1f1f0;
+    background-color: #6f7058;
+    background-image: linear-gradient(90deg, #6bca2b, rgb(83, 116, 30) );
+    border: none;
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    z-index: 1000;
+   
+}
+.AcessarProj:hover{
+    transform: scale(1.05);
+
+}
+.AcessarReposit{
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    color: #f1f1f0;
+    background-color: #6f7058;
+    background-image: linear-gradient(90deg, #6bca2b, rgb(83, 116, 30) );
+    border: none;
+    position: absolute;
+    bottom: 35px;
+    left: 180px;
+    z-index: 1000;
+}
+.AcessarReposit:hover{
+    transform: scale(1.05);
+}
+.AcessarProj, .AcessarReposit button{
+    margin-top: 50px;
+}
+/* PROJETO FLUTTERFLOW */
+.janela-modal-ProjFlutter{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000008a;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+.modalflutter{
+    width: 65%;
+    height: 450px;
+    min-height: 200px;
+    background-color: var(--cor-fundo);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+.janela-modal-ProjFlutter.abrir{
+    display: flex;
+}
+.abrir .modalflutter{
+    animation: abrirModal 0.5s;
+}
+.modalflutter p, h1, h3{
+    margin-left: 600px;
+    margin-top: -5px;
+    font-family: "DM Sans", sans-serif;
+}
+.modalflutter h1, h3{
+    color: var(--cor-principal1);
+}
+.modalflutter p{
+    color: #8e8f8c;
+}
+@media screen and (max-width: 1160px){
+    .trilho{
+        display: none;
+    }
+    .nav-content ul{
+        display: none;
+    }
+    .logo-saturn img{
+        width: 60px;
+        height: 60px;
+        margin-left: -80px;
+    }
+    .title h1, #typing, .p{
+        justify-content: center;
+        margin-left: 15px;
+    }
+    .nome{
+        margin-top: 10px;
+    }
+    .p{
+        margin-top: 10px;
+        font-size: 20px;
+        
+    }
+    .ola{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    #typing{
+        font-size: 30px;
+    }
+    
+    .botao-contato{
+        width: 15px;
+        margin-left: -10px;
+    }
+    .botao-curriculo{
+        width: 15px;
+        margin-left: -140px;
+        justify-content: center;
+    }
+    .divisor hr{
+        margin-top: 320px;
+    }
+    .imagem-perfil img{
+        margin-top: 250px;
+        width: 180px;
+        height: 220px;
+        margin-left: 50px;
+    }
+   
+    
 }

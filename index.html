@@ -39,6 +39,8 @@
             </div>
         </div>
 
+
+
             <div class="imagem-perfil">
                 <a href="">
                     <img src="src/img-perfil.jpeg">
@@ -73,8 +75,11 @@
                         <h2 class="h2-projetos">MEUS <span>PROJETOS.</span></h2>
                     </div>
                     <div class="sessao-projetos">
-                        <div class="proj-cinema"><img class="proj-cinema" src="src/projetos/projcinemanacional.JPG"><hr class="linha-projetos1"></div>
-                        <div class="proj-flutterflow"><img class="proj-flutterflow" src="src/projetos/projFlutterflow.png"><hr class="linha-projetos2"></div>
+                        <div class="proj-cinema"><img class="proj-cinema" src="src/projetos/projcinemanacional.JPG"><hr class="linha-projetos1"><nav class="aba"><button onclick="AbrirModal()" class="botao1">Ver mais</button></nav><p>16 de Março de 2026</p></div>
+                        <div class="proj-flutterflow"><img class="proj-flutterflow" src="src/projetos/projFlutterflow.png"><hr class="linha-projetos2"><nav class="aba2"><button onclick="AbrirModal2()" class="botao2">Ver mais</button></nav><p>16 de Março de 2026</p></div>
+                        </div>
+
+                    
                     </div>
                 </section>
                 <section id="contato">
@@ -90,6 +95,8 @@
                     </div>
                     </div>
                 </section>
+
+                
         
 
        <script>
@@ -142,6 +149,7 @@
 
 </script>
 <script src="main.js"></script>
+<script src="modal.js"></script>
 
     <footer class="footer">
         <ul class="footer-links">
@@ -151,8 +159,54 @@
         </ul>
     </footer>
 
-</body>
-<script>
+        <div class="janela-modal-ProjCinema" id="janela-modal-ProjCinema">
+                    <div class="modalcinema">
+                        <button class="fechar" id="fechar">X</button>
+                        <h1>CinemaNacional</h1>
+                        <p> O CinemaNacional é uma plataforma de streaming dedicada exclusivamente a</p>
+                        <p> filmes brasileiros,criada com o objetivo de valorizar e dar mais visibilidade às produções do nosso país.</p>
+                        <p>Com esse projeto tive a oportunidade de trabalhar pela primeira vez com</p>
+                        <p>PHP e banco de dados MySQL.</p>
+                        <h3>Ferramentas e linguagens utilizadas:</h3>
+                        <p>○ PHP</p>
+                        <p>○ MySQL</p>
+                        <p>○ JavaScript</p>
+                        <p>○ HTML5</p>
+                        <p>○ CSS3</p>
+                        <!-- <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0" 
+                        allowfullscreen>
+                        </iframe> -->
+                        <button class="AcessarProj">Acessar Projeto</button>
+                        <button class="AcessarReposit">Acessar Repositório</button>
+                        
+                    </div>
+                </div>
+                <!-- PROJETO FLUTTERFLOW -->
+                <div class="janela-modal-ProjFlutter" id="janela-modal-ProjFlutter">
+                    <div class="modalflutter">
+                        <button class="fechar" id="fechar">X</button>
+                        <h1>Refúgio dos Clássicos</h1>
+                        <p>Refúgio dos Clássicos foi um projeto desenvolvido durante meu curso,</p>
+                        <p>no qual podíamos escolher livremente o tipo de aplicação que iríamos criar</p>
+                        <p>no FlutterFlow. Optei por desenvolver uma loja de livros, voltada para obras</p>
+                        <p>clássicas da literatura brasileira e estrangeira.</p>
+                        <p>Esse projeto uniu duas das minhas paixões:</p>
+                        <p>os livros e o desenvolvimento.</p>
+                        <h3>Ferramentas utilizadas:</h3>
+                        <p>○ Flutterflow</p>
+                        <p>○ Supabase</p>
+                        <!-- <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0" 
+                        allowfullscreen>
+                        </iframe> -->
+                        <button class="AcessarProj">Acessar Projeto</button>
+                        <button class="AcessarReposit">Acessar Repositório</button>
+                        
+                    </div>
+                </div>
 
-</script>
+</body>
 </html>
