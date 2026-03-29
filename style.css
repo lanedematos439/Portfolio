@@ -746,6 +746,11 @@ body.light .email-p p, .telefone-p p, .linkedin-p p, .github-p p{
 .modalflutter p{
     color: #8e8f8c;
 }
+iframe{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
 @media screen and (max-width: 1160px){
     .trilho{
         display: none;
