@@ -1,3 +1,3 @@
-Portfolio (ainda não terminado)
+Portfolio 
 
 https://lanedematos439.github.io/Portfolio/
