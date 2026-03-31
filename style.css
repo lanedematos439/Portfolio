@@ -1017,9 +1017,17 @@ iframe{
         margin: 10px 0;
     }
     .modalflutter p, .modalflutter h1, .modalflutter h3{
+        margin-left: 20px;
         margin-right: 20px;
         margin-top: 15px;
         text-align: right; 
+        font-family: "DM Sans", sans-serif;
+    }
+    .modalflutter h1, .modalflutter h3{
+        color: var(--cor-principal1);
+    }
+    .modalflutter p{
+        color: #8e8f8c;
     }
 
     /* SEÇÃO CONTATO MOBILE */
